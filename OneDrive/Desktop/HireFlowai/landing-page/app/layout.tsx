@@ -20,20 +20,13 @@ export const metadata: Metadata = {
   authors: [{ name: "HireFlow AI" }],
   creator: "HireFlow AI",
   metadataBase: new URL("https://hireflowai.in"),
+
   openGraph: {
     title: "HireFlow AI",
     description:
       "Practice interviews, track applications, and improve with AI.",
     url: "https://hireflowai.in",
     siteName: "HireFlow AI",
-    images: [
-      {
-        url: "/og-image.png", // add later if not available
-        width: 1200,
-        height: 630,
-        alt: "HireFlow AI",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -41,14 +34,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/logo.png" sizes="any" />
-      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
