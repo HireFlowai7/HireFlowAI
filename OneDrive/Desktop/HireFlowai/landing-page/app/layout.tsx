@@ -7,8 +7,36 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "HireFlow AI – Crack Interviews. Track Jobs. Improve with AI",
+  description:
+    "HireFlow AI is an AI-powered career platform to practice interviews, track job applications, and improve with intelligent feedback.",
+  keywords: [
+    "AI interview practice",
+    "job tracker",
+    "mock interviews",
+    "career platform",
+    "interview preparation",
+  ],
+  authors: [{ name: "HireFlow AI" }],
+  creator: "HireFlow AI",
+  metadataBase: new URL("https://hireflowai.in"),
+  openGraph: {
+    title: "HireFlow AI",
+    description:
+      "Practice interviews, track applications, and improve with AI.",
+    url: "https://hireflowai.in",
+    siteName: "HireFlow AI",
+    images: [
+      {
+        url: "/og-image.png", // add later if not available
+        width: 1200,
+        height: 630,
+        alt: "HireFlow AI",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
