@@ -19,17 +19,32 @@ const Footer = () => {
         <h1 className="heading lg:max-w-[45vw]">
           Ready to land <span className="text-purple">your</span> dream job?
         </h1>
+
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Start practicing interviews and tracking applications with HireFlow AI.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+
+        {/* ✅ Updated email CTA */}
+        <a href="mailto:contact@hireflowai.in?subject=Inquiry%20from%20HireFlow%20Website">
           <MagicButton
-            title="Get Started"
+            title="Contact Us"
             icon={<FaLocationArrow />}
             position="right"
           />
         </a>
+
+        {/* ✅ Optional: visible email */}
+        <p className="text-sm text-white-300 mt-4">
+          or email us at{" "}
+          <a
+            href="mailto:contact@hireflowai.in"
+            className="text-purple underline"
+          >
+            contact@hireflowai.in
+          </a>
+        </p>
       </div>
+
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           © 2026 HireFlow AI
